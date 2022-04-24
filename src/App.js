@@ -1,4 +1,4 @@
-import { Box, Container, useColorMode } from "@chakra-ui/react";
+import { Box, useColorMode } from "@chakra-ui/react";
 import "./App.css";
 import { useState, useEffect } from "react";
 import axios from "axios";
@@ -10,13 +10,12 @@ import Movies from "./components/Movies";
 import Tv from "./components/Tv";
 import Horror from "./components/Horror";
 import Movie from "./components/Movie";
-import TvItem from "./components/TvItem";
 import Search from "./components/Search";
 import TvShow from "./components/TvShow";
 import Show from "./components/Show";
 
 function App() {
-  const API_KEY = "0100fd5106a322614a7c2f9577efea7b";
+  // const API_KEY = "0100fd5106a322614a7c2f9577efea7b";
   const base_url = "https://api.themoviedb.org/3";
   const { colorMode, toggleColorMode } = useColorMode();
   const isDark = colorMode === "dark";
